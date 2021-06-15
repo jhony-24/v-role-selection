@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <SelectRoleInApplication />
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import SelectRoleInApplication from '../components/SelectRoleInApplication/SelectRoleInApplication.vue'
+
+export default defineComponent({
+  components: {
+    SelectRoleInApplication
+  }
+})
+</script>

@@ -1,7 +1,7 @@
-import { Component, createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import { createPinia } from "pinia";
+import { Component, createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import { createPinia } from 'pinia'
 
 interface InitializeApplicationProps {
   app: Component;
@@ -9,15 +9,15 @@ interface InitializeApplicationProps {
 }
 
 const initializeApplication = ({ app, mount }: InitializeApplicationProps) => {
-  const pinia = createPinia();
+  const pinia = createPinia()
 
   return createApp(app)
     .use(router)
     .use(pinia)
-    .mount(mount);
-};
+    .mount(mount)
+}
 
 initializeApplication({
   app: App,
-  mount: "#app"
-});
+  mount: '#app'
+})

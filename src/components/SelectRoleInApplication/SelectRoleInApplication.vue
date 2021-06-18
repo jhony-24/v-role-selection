@@ -13,6 +13,9 @@
       <div class="hero__footer">
         <RoleButton :disabled="!isRoleSelected" />
       </div>
+      <div class="hero__copyright">
+        <span class="hero__copyright__text">This project is to practice using new technologie of vue 3</span>
+      </div>
     </div>
   </div>
 </template>
@@ -67,6 +70,7 @@ $hero : hero;
   }
   &__message{
     color: var(--color-text-secondary);
+    font-size:.9rem;
   }
   &__roles {
     display: grid;
@@ -77,6 +81,13 @@ $hero : hero;
     display: flex;
     justify-content: center;
     margin-top: 50px;
+  }
+  &__copyright {
+    margin-top: 2em;
+    &__text {
+    color: var(--color-text-secondary);
+    font-size:.8rem;
+    }
   }
 }
 .container {
